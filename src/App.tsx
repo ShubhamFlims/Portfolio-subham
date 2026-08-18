@@ -10,6 +10,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Portfolio } from './components/Portfolio';
 import { Services } from './components/Services';
+import { Clients } from './components/Clients';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
@@ -21,14 +22,12 @@ export default function App() {
       <LiquidInteraction />
       <CustomCursor />
       <Navbar />
-      <main>
-        <Hero />
-        <Portfolio />
-        <About />
-        <Experience />
-        <Skills />
-        <Contact />
-      </main>
-    </SmoothScroll>
-  );
-}
+     <main>
+  <Hero />
+  <Portfolio />
+  <Clients />
+  <About />
+  <Experience />
+  <Skills />
+  <Contact />
+</main>
