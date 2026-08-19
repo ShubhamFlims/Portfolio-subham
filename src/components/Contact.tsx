@@ -20,7 +20,7 @@ export const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent transition-colors">
                   <Mail size={20} />
                 </div>
-                <span className="text-lg font-medium">shubhammaner1235@gmail.com</span>
+               <span className="text-lg font-medium">shubhamfilms07@gmail.com</span>
               </a>
               <a 
                 href="https://wa.me/919060982460?text=Hi%20Shubham%2C%20I'm%20interested%20in%20your%20video%20editing%20services.%20Can%20we%20talk%3F" 
