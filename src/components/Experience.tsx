@@ -70,10 +70,11 @@ const timeline = [
   },
 ];
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <section id="experience" className="py-32 px-6 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+
         {/* Main Work Experience */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -83,6 +84,7 @@ export const Experience = () => {
           <span className="text-accent font-mono text-sm tracking-widest uppercase mb-4 block">
             Career Path
           </span>
+
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-12">
             WORK HISTORY
           </h2>
@@ -102,7 +104,9 @@ export const Experience = () => {
                     {exp.duration}
                   </span>
 
-                  <h3 className="text-2xl font-bold mb-2">{exp.role}</h3>
+                  <h3 className="text-2xl font-bold mb-2">
+                    {exp.role}
+                  </h3>
 
                   <h4 className="text-white/60 font-mono text-sm mb-8">
                     {exp.company}
@@ -153,10 +157,13 @@ export const Experience = () => {
 
                 <div className="glass p-8 rounded-2xl group-hover:border-accent/30 transition-colors">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-                    <h3 className="text-xl font-bold">{item.role}</h3>
+                    <h3 className="text-xl font-bold">
+                      {item.role}
+                    </h3>
 
                     <span className="text-[10px] font-mono text-white/40 flex items-center gap-2">
-                      <Calendar size={12} /> {item.duration}
+                      <Calendar size={12} />
+                      {item.duration}
                     </span>
                   </div>
 
@@ -177,8 +184,12 @@ export const Experience = () => {
             ))}
           </div>
         </motion.div>
+
       </div>
     </section>
   );
 };
+
+export { Experience };
+export default Experience;
 ```
