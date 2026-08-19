@@ -22,12 +22,16 @@ export default function App() {
       <LiquidInteraction />
       <CustomCursor />
       <Navbar />
-     <main>
-  <Hero />
-  <Portfolio />
-  <Clients />
-  <About />
-  <Experience />
-  <Skills />
-  <Contact />
-</main>
+
+      <main>
+        <Hero />
+        <Portfolio />
+        <Clients />
+        <About />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+    </SmoothScroll>
+  );
+}
