@@ -12,7 +12,7 @@ import { Portfolio } from './components/Portfolio';
 import { Services } from './components/Services';
 import { Clients } from './components/Clients';
 import { About } from './components/About';
-import { Experience } from './components/Experience';
+import Experience from './components/Experience';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 
