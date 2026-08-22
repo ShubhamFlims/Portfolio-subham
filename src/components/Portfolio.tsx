@@ -110,6 +110,18 @@ const SAMPLE_PROJECTS: Project[] = [
   },
 ];
 
+const PROJECT_IMAGES: Record<string, string> = {
+  '1': '/ChatGPT Image May 31, 2026, 11_02_54 PM.png',
+  '2': '/536533614_17863756659448696_596343483044701658_n.jpg',
+  '3': '/538707630_18107964259544542_5729342916690522184_n.jpg',
+  '4': '/441819772_439700032082052_656436152564400092_n.jpg',
+  '5': '/652799791_18060205394402004_5523147764040525668_n.jpg',
+  '6': '/534777593_18131528935450444_6802202317043440863_n.jpg',
+  '7': '/412689038_672229138131377_5864501099487066219_n.jpg',
+  '8': '/356782075_3228027087490457_7985763114042100718_n.jpg',
+  '9': '/ChatGPT Image Jul 21, 2026, 03_05_19 PM.png',
+};
+
 const AnimatedBackground = ({
   project,
 }: {
@@ -127,7 +139,10 @@ const AnimatedBackground = ({
   ];
 
   return (
-    <div className="portfolio-thumb absolute inset-0 overflow-hidden bg-black">
+    <div
+      className="portfolio-thumb absolute inset-0 overflow-hidden bg-black bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url("${PROJECT_IMAGES[project.id]}")` }}
+    >
 
       {/* Individual colour theme */}
       <div
