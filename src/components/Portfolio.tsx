@@ -127,7 +127,7 @@ const AnimatedBackground = ({
   ];
 
   return (
-    <div className="absolute inset-0 overflow-hidden bg-black">
+    <div className="portfolio-thumb absolute inset-0 overflow-hidden bg-black">
 
       {/* Individual colour theme */}
       <div
